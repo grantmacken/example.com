@@ -1,0 +1,20 @@
+<html lang="en" data-template="data-map:loadPageModel">
+  <head class="templates:include?path=templates/includes/head.html" />
+  <body>
+    <header class="templates:include?path=templates/includes/header.html" role="banner" />
+    <main role="main">
+      <section aria-labelledby="section-heading" class="h-entry">
+      <h2 id="section-heading" class="p-name" data-template="entry:name">Section Heading</h2>
+      <p class="h-summary>Summary"  data-template="entry:summary"></p>
+        <article role="article"  data-template="entry:content" >This article contains an independent block of information.
+        </article>
+      </section>
+      <aside role="complementary">
+        <ul class="templates:include?path=templates/includes/sections/archive-feed.html"/>
+      </aside>
+    </main>
+    <footer role="contentinfo"
+        class="templates:include?path=templates/sections/footer-home.html">
+      This footer contains information about the document's content.</footer>
+  </body>
+</html>

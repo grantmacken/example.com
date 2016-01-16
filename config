@@ -1,0 +1,5 @@
+NAME=example.com
+OWNER=grantmacken
+DESCRIPTION=example site for nginx-eXist setup
+ABBREV=example
+AUTHOR=Grant MacKenzie
