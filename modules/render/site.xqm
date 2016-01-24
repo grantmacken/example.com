@@ -1,4 +1,4 @@
-xquery version "3.0";
+xquery version "3.1";
 module namespace site="http://markup.co.nz/#site";
 (:~
 : SITE
@@ -64,7 +64,7 @@ else ()
 declare
 function site:title($node as node(), $model as map(*)) {
   element {local-name($node)} {
-  ( map:get($model('site'), 'title') )
+  ( map:get($model('site'),'title' ))
   }
 };
 

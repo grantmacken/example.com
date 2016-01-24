@@ -1,4 +1,4 @@
-xquery version "3.0";
+xquery version "3.1";
 module namespace data-map="http://markup.co.nz/#data-map";
 
 import module namespace templates="http://exist-db.org/xquery/templates" ;
@@ -222,6 +222,25 @@ let $mpData := map {
  'item'	:= $getItemType()
 }
 
+(:
+let $jsn := '{
+ "site-title": "' || $site-name || '"
+ }'
+let $options := map {"liberal": true()}
+let $map := parse-json($jsn,$options)
+
+
+return
+    element {local-name($node)} {
+    templates:process(
+      $node/node(),
+      map:new((
+       $model, $map
+      ))
+      )
+     }
+};
+:)
 return
     element {local-name($node)} {
     templates:process(

@@ -1,5 +1,5 @@
-xquery version "3.0";
-import module namespace templates="http://exist-db.org/xquery/templates" ;
+xquery version "3.1";
+import module namespace templates="http://exist-db.org/xquery/templates";
 import module namespace config="http://exist-db.org/xquery/apps/config" at "config.xqm";
 (: import module namespace site="http://exist-db.org/apps/site-utils"; :)
 (:include my modules here:)
@@ -8,8 +8,9 @@ import module namespace data-map="http://markup.co.nz/#data-map" at "data-map.xq
 import module namespace site="http://markup.co.nz/#site" at "render/site.xqm";
 import module namespace feed="http://markup.co.nz/#feed" at "render/feed.xqm";
 import module namespace entry="http://markup.co.nz/#entry" at "render/entry.xqm";
-(:############################################################################:)
-(: declare output :)
+(:############################################################################
+############################################################################:)
+(:  declare output  :)
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
 declare option output:method "html5";
 declare option output:media-type "text/html";
