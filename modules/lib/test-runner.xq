@@ -190,7 +190,7 @@ let $getSequenceType := function( $node){
  else if ($node instance of comment()) then 'comment'
  else if ($node instance of processing-instruction())
          then 'processing-instruction'
- else if ($node instance of empty())
+ else if ($node instance of empty-sequence())
          then 'empty'
  else if ($node instance of item())
          then 'empty'
